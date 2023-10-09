@@ -1,5 +1,3 @@
-import '../scss/pages/Home.scss'
-
 import TotalPlannedRides from "../components/TotalPlannedRides"
 import CurrentRides from "../components/CurrentRides"
 

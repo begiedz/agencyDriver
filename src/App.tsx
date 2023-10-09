@@ -1,5 +1,5 @@
 import { Route, Routes } from 'react-router-dom'
-import './scss/main.scss'
+import './scss/style.scss'
 import Navbar from './components/Navbar'
 
 import TransportPlanning from './pages/TransportPlanning'

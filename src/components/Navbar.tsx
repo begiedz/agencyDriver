@@ -1,4 +1,3 @@
-import '../scss/components/Navbar.scss'
 import { Link } from 'react-router-dom'
 
 const Navbar = () => {

@@ -1,8 +1,6 @@
-import '../scss/components/PlannedRide.scss'
-
 const PlannedRide = () => {
   return (
-    <div>
+    <div className='plannedRide'>
       <section>
         <p> From: Lopik</p>
         <p>To: Amsterdam Jumbo</p>

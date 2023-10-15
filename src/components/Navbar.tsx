@@ -6,6 +6,7 @@ const Navbar = () => {
       Agency Driver
       <Link to="/">Home</Link>
       <Link to='/transportPlanning'>Transport Planning</Link>
+      <Link to='/startRide'>Start a ride</Link>
     </nav>
   )
 }

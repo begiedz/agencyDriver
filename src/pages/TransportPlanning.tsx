@@ -1,9 +1,8 @@
-import PlannedRide from '../components/PlannedRide'
+import NextPlannedRide from '../components/NextPlannedRide'
 const transportPlanning = () => {
   return (
     <div>
-      <code>transportPlanning</code>
-      <PlannedRide />
+      <NextPlannedRide />
     </div>
   )
 }

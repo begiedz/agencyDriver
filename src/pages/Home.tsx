@@ -4,7 +4,6 @@ import CurrentRides from "../components/CurrentRides"
 const Home = () => {
   return (
     <div>
-      <code>Home</code>
       <CurrentRides />
       <TotalPlannedRides />
     </div>

@@ -1,11 +1,11 @@
-import TotalPlannedRides from "../components/TotalPlannedRides"
-import CurrentRides from "../components/CurrentRides"
+import AllPlannedRides from "../components/AllPlannedRides"
+import CurrentRide from "../components/CurrentRide"
 
 const Home = () => {
   return (
     <div>
-      <CurrentRides />
-      <TotalPlannedRides />
+      <CurrentRide />
+      <AllPlannedRides />
     </div>
   )
 }

@@ -1,0 +1,38 @@
+.currentRide {
+  a {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+
+    max-width: 500px;
+
+    padding: 1rem;
+
+    text-decoration: none;
+    color: black;
+
+    border-radius: 1rem;
+    border: 1px solid gray;
+    transition: background-color 200ms ease-out;
+
+    h2 {
+      font-size: 2rem;
+    }
+    .carInfo {
+      place-self: flex-start;
+    }
+    .infoWrapper {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+
+      width: 100%;
+      p {
+        color: rgba($color: #000000, $alpha: 0.5);
+      }
+    }
+  }
+}
+a:hover {
+  background-color: gray;
+}

@@ -7,7 +7,7 @@ const CurrentRide = () => {
         <div className="carInfo">Renault Clio 7-ZPG-24</div>
         <div className="infoWrapper">
           <p>Passengers: 4</p>
-          <p>Distance: 57,1 km</p>
+          <p>Departure: 06:15</p>
         </div>
       </a>
     </div>

@@ -1,11 +1,13 @@
 import AllPlannedRides from "../components/AllPlannedRides"
 import CurrentRide from "../components/CurrentRide"
+import ScrollList from "../components/ScrollList"
 
 const Home = () => {
   return (
-    <div>
+    <div className="home">
       <CurrentRide />
       <AllPlannedRides />
+      <ScrollList />
     </div>
   )
 }

@@ -1,4 +1,7 @@
 .currentRide {
+  h2 {
+    margin: 1rem;
+  }
   a {
     display: flex;
     flex-direction: column;
@@ -16,7 +19,7 @@
     transition: background-color 200ms ease-out;
 
     h2 {
-      font-size: 2rem;
+      font-size: 2.2rem;
     }
     .carInfo {
       place-self: flex-start;

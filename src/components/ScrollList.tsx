@@ -1,18 +1,20 @@
-const ScrollList = () => {
+const ScrollList = (props: any) => {
   return (
-
-    <ul className="scrollList">
-      <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, architecto.</li>
-      <li>lorem10</li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-    </ul>
-
+    <div className="scrollListWrapper">
+      <ul className="scrollList">
+        {props.rides.slice(1).map((ride: any) => {
+          return (
+            <li>
+              <a href="#">
+                <p>{ride.destinationName}</p>
+                <p>{ride.vehicle}</p>
+                <p>{ride.departure}</p>
+                <p>{ride.passengers}</p>
+              </a>
+            </li>)
+        })}
+      </ul>
+    </div>
   )
 }
 

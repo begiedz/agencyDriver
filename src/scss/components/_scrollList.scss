@@ -1,15 +1,17 @@
-ul.scrollList {
-  overflow: scroll;
-  display: flex;
+div.scrollListWrapper {
   width: 100vw;
-
   padding: 0 1rem;
+  ul.scrollList {
+    overflow: scroll;
+    display: flex;
+    list-style: none;
+    gap: 1rem;
+    li {
+      padding: 1rem;
 
-  list-style: none;
-  gap: 1rem;
-  li {
-    min-height: 100px;
-    min-width: 200px;
-    background-color: gray;
+      min-height: 100px;
+      min-width: 200px;
+      background-color: gray;
+    }
   }
 }

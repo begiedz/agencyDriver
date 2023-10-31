@@ -1,4 +1,4 @@
-export let rides:Array<object> = [
+export const rides:Array<object> = [
   {
     rideID: 0,
     date:"31-10-2023",
@@ -87,5 +87,88 @@ export let rides:Array<object> = [
 
     destinationName: "Agency Hotel",
     destinationAdress: "Runderweg 11 1234 AB Amsterdam",
+  },
+]
+
+export const passengers:Array<object> = [
+  {
+    workerId: 123,
+    name: "Tomasz",
+    destination:{
+      name:"Jumbo Online",
+      adress:"Gyroscoopweg 10 1042 AC Amsterdam"
+    },
+  },
+  {
+    workerId: 124,
+    name: "Daniel",
+        destination:{
+      name:"Jumbo Online",
+      adress:"Gyroscoopweg 10 1042 AC Amsterdam"
+    },
+  },
+  {
+    workerId: 125,
+    name: "Magda",
+        destination:{
+      name:"Jumbo Online",
+      adress:"Gyroscoopweg 10 1042 AC Amsterdam"
+    },
+  },
+  {
+    workerId: 223,
+    name: "Marek",
+        destination:{
+      name:"Jumbo Online",
+      adress:"Gyroscoopweg 10 1042 AC Amsterdam"
+    },
+  },
+  {
+    workerId: 225,
+    name: "Krzysztof",
+        destination:{
+      name:"Jumbo Online",
+      adress:"Gyroscoopweg 10 1042 AC Amsterdam"
+    },
+  },
+  {
+    workerId: 1123,
+    name: "Petr",
+        destination:{
+      name:"Jumbo Online",
+      adress:"Gyroscoopweg 10 1042 AC Amsterdam"
+    },
+  },
+  {
+    workerId: 1231,
+    name: "Oleksandr",
+        destination:{
+      name:"Jumbo Online",
+      adress:"Gyroscoopweg 10 1042 AC Amsterdam"
+    },
+  },
+  {
+    workerId: 898,
+    name: "Błażej",
+    destination:{
+      name:"Jumbo Online",
+      adress:"Gyroscoopweg 10 1042 AC Amsterdam"
+    },
+  },
+  {
+    workerId: 666,
+    name: "Jerzy",
+    destination:{
+      name:"IKEA",
+      adress:"Swedenstraat 12 1010 IK Amsterdam"
+    },
+  },
+  {
+    workerId: 665,
+    name: "Jarosław",
+    destination:{
+      name:"Albert Heijn E-Store",
+      adress:"Bornhout 5 1046 PP"
+    },
   },
 ]

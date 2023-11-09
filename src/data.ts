@@ -1,94 +1,3 @@
-export const rides:Array<object> = [
-  {
-    rideID: 0,
-    date:"31-10-2023",
-    departure:"06:15",
-    distance: 20,
-    vehicle:"Renault Clio 1-ABC-23",
-    passengers: 4,
-
-    startLocationName: "Agency Hotel",
-    startLocationAdress: "Runderweg 11 1234 AB Amsterdam",
-
-    destinationName: "Jumbo Online",
-    destinationAdress:"Gyroscoopweg 10 1042 AC Amsterdam",
-
-  },  
-  {
-    rideID: 1,
-    date:"31-10-2023",
-    departure:"14:30",
-    distance: 20,
-    vehicle:"Renault Clio 1-ABC-23",
-    passengers: 4,
-
-    startLocationName: "Jumbo Online",
-    startLocationAdress:"Gyroscoopweg 10 1042 AC Amsterdam",
-
-    destinationName: "Agency Hotel",
-    destinationAdress: "Runderweg 11 1234 AB Amsterdam",
-
-  },
-  {
-    rideID: 2,
-    date:"01-11-2023",
-    departure:"06:15",
-    distance: 20,
-    vehicle:"Ford Transit 4-DEF-56",
-    passengers: 8,
-
-    startLocationName: "Agency Hotel",
-    startLocationAdress: "Runderweg 11 1234 AB Amsterdam",
-
-    destinationName: "Jumbo Online",
-    destinationAdress:"Gyroscoopweg 10 1042 AC Amsterdam",
-
-  },  
-  {
-    rideID: 3,
-    date: "01-11-2023",
-    departure:"14:30",
-    distance: 20,
-    vehicle:"Ford Transit 4-DEF-56",
-    passengers: 8,
-
-    startLocationName: "Jumbo Online",
-    startLocationAdress:"Gyroscoopweg 10 1042 AC Amsterdam",
-
-    destinationName: "Agency Hotel",
-    destinationAdress: "Runderweg 11 1234 AB Amsterdam",
-
-  },
-  {
-    rideID: 4,
-    date:"31-10-2023",
-    departure:"08:35",
-    distance: 117.1,
-    vehicle:"Renault Clio 1-ABC-23",
-    passengers: 1,
-
-    startLocationName: "Agency Hotel",
-    startLocationAdress: "Runderweg 11 1234 AB Amsterdam",
-
-    destinationName: "Agency Headquaters",
-    destinationAdress:"Valkhofparkstraat 123 1122 AD Nijmegen",
-
-  },
-  {
-    rideID: 5,
-    date:"31-10-2023",    
-    departure:"16:30",
-    distance: 117,
-    vehicle:"Renault Clio 1-ABC-23",
-    passengers: 1,
-
-    startLocationName: "Agency Headquaters",
-    startLocationAdress:"Valkhofparkstraat 123 1122 AD Nijmegen",
-
-    destinationName: "Agency Hotel",
-    destinationAdress: "Runderweg 11 1234 AB Amsterdam",
-  },
-]
 
 export const passengers:Array<object> = [
   {
@@ -172,3 +81,137 @@ export const passengers:Array<object> = [
     },
   },
 ]
+
+const jumboPassengers = passengers.filter((passenger:any) =>{
+  return (passenger.destination.adress === "Gyroscoopweg 10 1042 AC Amsterdam")
+})
+
+export const rides:Array<object> = [
+  {
+    rideID: 0,
+    departure: {
+      date: "31-10-2023",
+      time: "06:15",
+    },
+    distance: 20,
+    vehicle: {
+      brand: "Renault Clio",
+      plate: "1-ABC-23",
+    },
+    passengers: jumboPassengers,
+    startLocation: {
+      name: "Agency Hotel",
+      address: "Runderweg 11 1234 AB Amsterdam",
+    },
+    destination: {
+      name: "Jumbo Online",
+      address: "Gyroscoopweg 10 1042 AC Amsterdam",
+    },
+  },
+  {
+    rideID: 1,
+    departure: {
+      date: "01-11-2023",
+      time: "06:15",
+    },
+    distance: 20,
+    vehicle: {
+      brand: "Ford Transit",
+      plate: "4-DEF-56",
+    },
+    passengers: jumboPassengers,
+    startLocation: {
+      name: "Agency Hotel",
+      address: "Runderweg 11 1234 AB Amsterdam",
+    },
+    destination: {
+      name: "Jumbo Online",
+      address: "Gyroscoopweg 10 1042 AC Amsterdam",
+    },
+  },
+  {
+    rideID: 2,
+    departure: {
+      date: "01-11-2023",
+      time: "14:30",
+    },
+    distance: 20,
+    vehicle: {
+      brand: "Ford Transit",
+      plate: "4-DEF-56",
+    },
+    passengers: jumboPassengers,
+    startLocation: {
+      name: "Jumbo Online",
+      address: "Gyroscoopweg 10 1042 AC Amsterdam",
+    },
+    destination: {
+      name: "Agency Hotel",
+      address: "Runderweg 11 1234 AB Amsterdam",
+    },
+  },  
+  {
+    rideID: 3,
+    departure: {
+      date: "01-11-2023",
+      time: "14:30",
+    },
+    distance: 20,
+    vehicle: {
+      brand: "Ford Transit",
+      plate: "4-DEF-56",
+    },
+    passengers: jumboPassengers,
+    startLocation: {
+      name: "Jumbo Online",
+      address: "Gyroscoopweg 10 1042 AC Amsterdam",
+    },
+    destination: {
+      name: "Agency Hotel",
+      address: "Runderweg 11 1234 AB Amsterdam",
+    },
+  },
+    {
+      rideID: 4,
+      departure: {
+        date: "31-10-2023",
+        time: "08:35",
+      },
+      distance: 117.1,
+      vehicle: {
+        brand: "Renault Clio",
+        plate: "1-ABC-23",
+      },
+      passengers: 1,
+      startLocation: {
+        name: "Agency Hotel",
+        address: "Runderweg 11 1234 AB Amsterdam",
+      },
+      destination: {
+        name: "Agency Headquaters",
+        address: "Valkhofparkstraat 123 1122 AD Nijmegen",
+      },
+    },
+    {
+      rideID: 5,
+      departure: {
+        date: "31-10-2023",
+        time: "16:30",
+      },
+      distance: 117,
+      vehicle: {
+        brand: "Renault Clio",
+        plate: "1-ABC-23",
+      },
+      passengers: 1,
+      startLocation: {
+        name: "Agency Headquaters",
+        address: "Valkhofparkstraat 123 1122 AD Nijmegen",
+      },
+      destination: {
+        name: "Agency Hotel",
+        address: "Runderweg 11 1234 AB Amsterdam",
+      },
+    },
+  ]
+  

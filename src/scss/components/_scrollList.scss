@@ -1,6 +1,7 @@
-div.scrollListWrapper {
+.scrollListWrapper {
   width: 100vw;
   padding: 0 1rem;
+  color: black;
   ul.scrollList {
     overflow: scroll;
     display: flex;
@@ -11,7 +12,14 @@ div.scrollListWrapper {
 
       min-height: 100px;
       min-width: 200px;
+
+      border-radius: 1rem;
+
       background-color: gray;
+      a {
+        color: inherit;
+        text-decoration: none;
+      }
     }
   }
 }

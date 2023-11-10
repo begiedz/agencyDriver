@@ -5,11 +5,11 @@ import { rides } from "../data.ts"
 
 const Home = () => {
   return (
-    <div className="home">
+    <main className="home">
       <CurrentRide rides={rides} />
       <div>All planned rides: {rides.length}</div>
       <ScrollList rides={rides} />
-    </div>
+    </main>
   )
 }
 

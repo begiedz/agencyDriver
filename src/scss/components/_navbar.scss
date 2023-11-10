@@ -8,17 +8,44 @@ nav {
 
   height: 4rem;
   width: 100%;
-  background-color: gray;
+
+  color: white;
+  fill: white;
+  background-color: var(--accent-blue);
 
   .logo {
     font-size: 1.2rem;
     font-weight: bold;
   }
-  a {
-    text-decoration: none;
-    color: black;
+
+  ul {
+    display: flex;
+    list-style: none;
+
+    li {
+      a {
+        padding: 0.5rem;
+        border-radius: 0.5rem;
+
+        text-decoration: none;
+        color: inherit;
+
+        transition: background-color 100ms ease-out;
+      }
+
+      a:hover {
+        background-color: var(--black-transparent02);
+      }
+    }
   }
-  a:hover {
-    background-color: rgba($color: #000000, $alpha: 0.5);
+  .profile {
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+  }
+  button {
+    font-size: 1rem;
+    padding: 0.3rem;
+    // border-radius: 0.5rem;
   }
 }

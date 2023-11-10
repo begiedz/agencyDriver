@@ -1,14 +1,14 @@
-const TransportPlanning = ({ rides }: any) => {
-  return (<div>
+const TransportPlanning = ({ rides }: any, index: number) => {
+  return (<div className="transportPlanning">
     <h2>TransportPlanning</h2>
-    <ul className="plannedRidesWrapper">
+    <ul key={index} className="plannedRidesWrapper">
       {rides.map((ride: any) => {
         return (
           <li className="plannedRide">
-            <p>From: {ride.startLocationName}</p>
-            <p>To: {ride.destinationName}</p>
-            <p>Passengers: {ride.passengers}</p>
-            <p>Distance: {ride.distance}</p>
+            <p>From: {ride.startLocation.name}</p>
+            <p>To: {ride.destination.name}</p>
+            <p>Passengers: {ride.passengers.length}</p>
+            <p>Distance: {ride.distance}km</p>
           </li>
         )
       })}

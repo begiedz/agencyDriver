@@ -13,7 +13,7 @@ const Navbar = () => {
         <li><Link to='/startRide'>Start a ride</Link></li>
       </ul>
       <div className='profile'><MdAccountCircle />Jan Nowak #11221</div>
-      <button>Logout</button>
+      <button className='logout'>Logout</button>
       <button className='menu'><BiMenu /></button>
     </nav>
   )

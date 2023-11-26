@@ -1,9 +1,11 @@
 @import './utils/variables.scss';
 
 @import './layout/global';
-
 @import './layout/home';
+@import './layout/popup';
+
 @import './components/navbar';
 @import './components/transportPlanning';
 @import './components/currentRide';
+@import './components/rideInfo';
 @import './components/scrollList';

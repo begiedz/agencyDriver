@@ -8,12 +8,13 @@ import RideStart from './pages/RideStart'
 import RideInfo from './pages/RideInfo'
 
 import { rides } from './data'
+
 function App() {
   return (
     <>
       <Navbar />
       <Routes>
-        <Route path='/' element={<Home rides={rides} />} />
+        <Route path='/' element={<Home rides={rides} RideInfo={RideInfo} />} />
         <Route path='/transportPlanning' element={<TransportPlanning rides={rides} />} />
         <Route path='/rideStart' element={<RideStart />} />
         <Route path='/rideInfo' element={<RideInfo />} />

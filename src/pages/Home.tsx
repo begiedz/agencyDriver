@@ -2,7 +2,7 @@ import CurrentRide from "../components/CurrentRide"
 import ScrollList from "../components/ScrollList"
 
 
-const Home = ({ rides }: any) => {
+const Home = ({ rides, RideInfo }: any) => {
   return (
     <main className="home">
       <CurrentRide rides={rides} />

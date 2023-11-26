@@ -1,6 +1,8 @@
 const RideInfo = () => {
   return (
-    <div>RideInfo</div>
+    <section className="rideInfo popup">
+      RideInfo
+    </section>
   )
 }
 
